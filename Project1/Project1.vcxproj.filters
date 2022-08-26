@@ -24,12 +24,27 @@
     <ClCompile Include="StrategyPattern.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TacticsAndFactory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Decorator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="FactoryMethod.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="StrategyPattern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TacticsAndFactory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="headerfile.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

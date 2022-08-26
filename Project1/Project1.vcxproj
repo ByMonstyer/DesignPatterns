@@ -64,13 +64,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Decorator.cpp" />
     <ClCompile Include="FactoryMethod.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="StrategyPattern.cpp" />
+    <ClCompile Include="TacticsAndFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Decorator.h" />
     <ClInclude Include="FactoryMethod.h" />
     <ClInclude Include="StrategyPattern.h" />
+    <ClInclude Include="TacticsAndFactory.h" />
+    <ClInclude Include="headerfile.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

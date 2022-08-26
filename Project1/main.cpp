@@ -1,9 +1,8 @@
-#include <iostream>
-#include <string>
+#include "headerfile.h"
 #include "FactoryMethod.h"
 #include "StrategyPattern.h"
-
-using namespace std;
+#include "TacticsAndFactory.h"
+#include "Decorator.h"
 
 void main()
 {
@@ -14,7 +13,7 @@ void main()
 	cout << a->GetResult() << endl;*/
 
 	//策略模式
-	char c = '+';
+	/*char c = '+';
 	switch (c)
 	{
 	case '+':
@@ -25,5 +24,32 @@ void main()
 		break;
 	default:
 		break;
+	}*/
+
+	//工厂+策略模式
+	/*ContextTacticsAndFactory *test = new ContextTacticsAndFactory('+');	
+	cout << test->GetResult() << endl;*/
+
+	//装饰模式
+	Person *p = new Person("小李");
+	BigTrouser *bt = new BigTrouser();
+	TShirts *ts = new TShirts();
+	bt->Decorate(p);
+	ts->Decorate(bt);
+	ts->Show();
+
+
+
+	/*int i = 0xffff;
+	char *a = (char *)&i;
+	std::vector<char>v;
+	for (int k = 0; k < 4; k++)
+	{
+		v.push_back(a[k]);
 	}
+
+	std::map<std::string, int>sl;
+	sl.insert(make_pair("123",12));
+	sl.insert({ "123", 12 });
+	sl.insert(pair<std::string, int>("789", 123));*/
 }

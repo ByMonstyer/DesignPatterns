@@ -1,6 +1,5 @@
 #include "FactoryMethod.h"
 
-
 double COperation::GetResult()
 {
 	double dResult = 0;
@@ -16,7 +15,6 @@ double SubOperation::GetResult()
 {
 	return m_nFirst - m_nSecond;
 }
-
 
 COperation* FactoryMethod::Create(char cOperator)
 {
